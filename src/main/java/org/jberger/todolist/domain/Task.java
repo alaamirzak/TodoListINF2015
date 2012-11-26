@@ -41,15 +41,6 @@ public class Task {
     }
 
     @Override
-    public int hashCode() {
-        int hash = 7;
-        hash = 23 * hash + (this.description != null ? this.description.hashCode() : 0);
-        hash = 23 * hash + (this.date != null ? this.date.hashCode() : 0);
-        hash = 23 * hash + (this.isDone ? 1 : 0);
-        return hash;
-    }
-
-    @Override
     public boolean equals(Object obj) {
         if (obj == null) {
             return false;
